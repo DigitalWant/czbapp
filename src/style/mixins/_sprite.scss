@@ -1,0 +1,167 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$hover-01-name: 'hover-01';
+$hover-01-x: 0px;
+$hover-01-y: 0px;
+$hover-01-offset-x: 0px;
+$hover-01-offset-y: 0px;
+$hover-01-width: 32px;
+$hover-01-height: 30px;
+$hover-01-total-width: 32px;
+$hover-01-total-height: 252px;
+$hover-01-image: '../assets/gen/sprite.png';
+$hover-01: (0px, 0px, 0px, 0px, 32px, 30px, 32px, 252px, '../assets/gen/sprite.png', 'hover-01', );
+$hovers-01-name: 'hovers-01';
+$hovers-01-x: 0px;
+$hovers-01-y: 30px;
+$hovers-01-offset-x: 0px;
+$hovers-01-offset-y: -30px;
+$hovers-01-width: 32px;
+$hovers-01-height: 30px;
+$hovers-01-total-width: 32px;
+$hovers-01-total-height: 252px;
+$hovers-01-image: '../assets/gen/sprite.png';
+$hovers-01: (0px, 30px, 0px, -30px, 32px, 30px, 32px, 252px, '../assets/gen/sprite.png', 'hovers-01', );
+$hover-02-name: 'hover-02';
+$hover-02-x: 0px;
+$hover-02-y: 60px;
+$hover-02-offset-x: 0px;
+$hover-02-offset-y: -60px;
+$hover-02-width: 32px;
+$hover-02-height: 32px;
+$hover-02-total-width: 32px;
+$hover-02-total-height: 252px;
+$hover-02-image: '../assets/gen/sprite.png';
+$hover-02: (0px, 60px, 0px, -60px, 32px, 32px, 32px, 252px, '../assets/gen/sprite.png', 'hover-02', );
+$hover-03-name: 'hover-03';
+$hover-03-x: 0px;
+$hover-03-y: 92px;
+$hover-03-offset-x: 0px;
+$hover-03-offset-y: -92px;
+$hover-03-width: 32px;
+$hover-03-height: 32px;
+$hover-03-total-width: 32px;
+$hover-03-total-height: 252px;
+$hover-03-image: '../assets/gen/sprite.png';
+$hover-03: (0px, 92px, 0px, -92px, 32px, 32px, 32px, 252px, '../assets/gen/sprite.png', 'hover-03', );
+$hover-04-name: 'hover-04';
+$hover-04-x: 0px;
+$hover-04-y: 124px;
+$hover-04-offset-x: 0px;
+$hover-04-offset-y: -124px;
+$hover-04-width: 32px;
+$hover-04-height: 32px;
+$hover-04-total-width: 32px;
+$hover-04-total-height: 252px;
+$hover-04-image: '../assets/gen/sprite.png';
+$hover-04: (0px, 124px, 0px, -124px, 32px, 32px, 32px, 252px, '../assets/gen/sprite.png', 'hover-04', );
+$hovers-02-name: 'hovers-02';
+$hovers-02-x: 0px;
+$hovers-02-y: 156px;
+$hovers-02-offset-x: 0px;
+$hovers-02-offset-y: -156px;
+$hovers-02-width: 32px;
+$hovers-02-height: 32px;
+$hovers-02-total-width: 32px;
+$hovers-02-total-height: 252px;
+$hovers-02-image: '../assets/gen/sprite.png';
+$hovers-02: (0px, 156px, 0px, -156px, 32px, 32px, 32px, 252px, '../assets/gen/sprite.png', 'hovers-02', );
+$hovers-03-name: 'hovers-03';
+$hovers-03-x: 0px;
+$hovers-03-y: 188px;
+$hovers-03-offset-x: 0px;
+$hovers-03-offset-y: -188px;
+$hovers-03-width: 32px;
+$hovers-03-height: 32px;
+$hovers-03-total-width: 32px;
+$hovers-03-total-height: 252px;
+$hovers-03-image: '../assets/gen/sprite.png';
+$hovers-03: (0px, 188px, 0px, -188px, 32px, 32px, 32px, 252px, '../assets/gen/sprite.png', 'hovers-03', );
+$hovers-04-name: 'hovers-04';
+$hovers-04-x: 0px;
+$hovers-04-y: 220px;
+$hovers-04-offset-x: 0px;
+$hovers-04-offset-y: -220px;
+$hovers-04-width: 32px;
+$hovers-04-height: 32px;
+$hovers-04-total-width: 32px;
+$hovers-04-total-height: 252px;
+$hovers-04-image: '../assets/gen/sprite.png';
+$hovers-04: (0px, 220px, 0px, -220px, 32px, 32px, 32px, 252px, '../assets/gen/sprite.png', 'hovers-04', );
+$spritesheet-width: 32px;
+$spritesheet-height: 252px;
+$spritesheet-image: '../assets/gen/sprite.png';
+$spritesheet-sprites: ($hover-01, $hovers-01, $hover-02, $hover-03, $hover-04, $hovers-02, $hovers-03, $hovers-04, );
+$spritesheet: (32px, 252px, '../assets/gen/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
